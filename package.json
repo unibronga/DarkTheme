@@ -3,6 +3,16 @@
     "displayName": "Unibronga One Dark",
     "description": "Unibronga One Dark Theme",
     "version": "0.0.1",
+    "publisher": "Unibronga",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/unibronga/DarkTheme"
+    },
+    "keywords": [
+        "dark",
+        "theme",
+        "unibronga"
+    ],
     "engines": {
         "vscode": "^1.66.0"
     },
