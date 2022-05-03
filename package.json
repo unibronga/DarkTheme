@@ -1,7 +1,7 @@
 {
-    "name": "unibronga-dark-theme",
-    "displayName": "Unibronga Dark Theme",
-    "description": "Unibronga Theme!",
+    "name": "unibronga-one-dark-theme",
+    "displayName": "Unibronga One Dark",
+    "description": "Unibronga One Dark Theme",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.66.0"
@@ -12,7 +12,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "Unibronga Dark Theme",
+                "label": "Unibronga One Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Unibronga Dark Theme-color-theme.json"
             }
