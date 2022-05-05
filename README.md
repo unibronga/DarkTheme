@@ -21,3 +21,4 @@ add to settings.json:
 
 "editor.lineHeight": 23,
 
+https://marketplace.visualstudio.com/items?itemName=Unibronga.unibronga-one-dark-theme
