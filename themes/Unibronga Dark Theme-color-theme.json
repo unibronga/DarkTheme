@@ -230,6 +230,62 @@
 			}
 		},
 		{
+			"scope": "entity.name.tag.html",
+			"settings": {
+				"foreground": "#ff7010"
+			}
+		},
+		{
+			"scope": "entity.other.attribute-name.html",
+			"settings": {
+				"foreground": "#FCCA46"
+			}
+		},
+		{
+			"scope": "string.quoted.double.html",
+			"settings": {
+				"foreground": "#fff1ca"
+			}
+		},
+		{
+			"scope": [
+				"storage.type.function.js",
+				"meta.function.js",
+				"source.js",
+				"meta.embedded.block.html",
+			],
+			"settings": {
+				"foreground": "#FCCA46"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.function.js",
+				"meta.function-call.js",
+				"meta.embedded.block.html",
+			],
+			"settings": {
+				"foreground": "#fff1ca"
+			}
+		},
+		{
+			"scope": [
+				"variable.parameter.js",
+				"meta.parameters.js",
+				"meta.function.js",
+				"meta.embedded.block.html",
+			],
+			"settings": {
+				"foreground": "#F9C74F"
+			}
+		},
+		{
+			"scope": "punctuation.definition.tag",
+			"settings": {
+				"foreground": "#F94144"
+			}
+		},
+		{
 			"scope": "keyword",
 			"settings": {
 				"foreground": "#ff791a"
