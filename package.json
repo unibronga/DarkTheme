@@ -25,7 +25,8 @@
             {
                 "label": "Unibronga One Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Unibronga Dark Theme-color-theme.json"
+                "path": "./themes/Unibronga Dark Theme-color-theme.json",
+                "_watch": true
             }
         ]
     }

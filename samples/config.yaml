@@ -1,0 +1,35 @@
+# Конфигурация CI
+name: Build & Test
+version: 1.0.1
+enabled: true
+timeout: 30
+ratio: 0.5
+empty: null
+
+on:
+  push:
+    branches: [master, 'release/*']
+  pull_request:
+
+env: &default-env
+  NODE_ENV: production
+  API_URL: "https://api.example.com"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      <<: *default-env
+      DEBUG: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install
+        run: npm ci
+      - name: Multiline script
+        run: |
+          echo "Building..."
+          npm run build -- --prod
+      - name: Folded
+        description: >
+          Этот текст
+          будет в одну строку

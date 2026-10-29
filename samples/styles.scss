@@ -1,0 +1,67 @@
+@use "sass:math";
+@import "variables";
+
+// Переменные и карты
+$primary: #ff7010;
+$secondary: #fcca46 !default;
+$breakpoints: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 1024px,
+);
+
+/* Миксин с параметрами */
+@mixin respond($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+@function rem($px, $base: 16px) {
+    @return math.div($px, $base) * 1rem;
+}
+
+%button-base {
+    display: inline-flex;
+    padding: rem(8px) rem(16px);
+    border: none;
+}
+
+.button {
+    @extend %button-base;
+    color: lighten($primary, 10%);
+    background: rgba($secondary, 0.2);
+
+    &:hover,
+    &:focus-visible {
+        background: darken($primary, 5%);
+    }
+
+    &--large {
+        font-size: rem(20px);
+    }
+
+    .icon + & {
+        margin-left: 4px;
+    }
+
+    @include respond("md") {
+        padding: rem(12px) rem(24px);
+    }
+}
+
+@each $name, $value in $breakpoints {
+    .container-#{$name} {
+        max-width: $value;
+    }
+}
+
+@for $i from 1 through 3 {
+    .mt-#{$i} { margin-top: #{$i * 4}px; }
+}
+
+@if $primary == #ff7010 {
+    .debug { outline: 1px dashed red; }
+} @else {
+    .debug { display: none; }
+}

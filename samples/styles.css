@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+/* ==========================================================
+   Переменные и базовые стили
+   ========================================================== */
+:root {
+    --bg: #232323;
+    --fg: rgb(225 228 232);
+    --accent: hsl(24, 100%, 53%);
+    --radius: 0.5rem;
+    --gap: calc(var(--radius) * 2);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Fira Code", Inconsolata, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--fg);
+    background-color: var(--bg);
+}
+
+/* Селекторы разных видов */
+#top .header > nav a[target="_blank"]:not(.link--active):hover {
+    color: var(--accent) !important;
+    text-decoration: underline dotted 2px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--gap);
+    padding: 1em 2rem;
+    border: 1px solid rgba(255, 136, 51, 0.25);
+    border-radius: var(--radius);
+    transition: transform 200ms ease-in-out, opacity .3s;
+}
+
+.card:nth-child(2n + 1)::after {
+    content: "→";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+}
+
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+    .card { grid-template-columns: 1fr; }
+}
+
+@keyframes pulse {
+    from { opacity: 1; transform: scale(1); }
+    50%  { opacity: 0.5; }
+    to   { opacity: 1; transform: scale(1.05) rotate(3deg); }
+}
+
+@supports (display: grid) {
+    .layout { display: grid; }
+}
+
+@font-face {
+    font-family: "Unibronga";
+    src: url("./fonts/unibronga.woff2") format("woff2");
+    font-display: swap;
+}

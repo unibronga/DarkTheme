@@ -1,0 +1,22 @@
+{
+    "name": "unibronga-sample",
+    "version": "1.0.1",
+    "private": true,
+    "port": 8080,
+    "ratio": 0.75,
+    "nothing": null,
+    "tags": ["dark", "theme", "warm"],
+    "author": {
+        "name": "Unibronga",
+        "url": "https://github.com/unibronga",
+        "escaped": "line\nbreak \"quoted\" — dash"
+    },
+    "scripts": {
+        "build": "tsc -p .",
+        "start": "node dist/index.js"
+    },
+    "matrix": [
+        { "id": 1, "enabled": true },
+        { "id": 2, "enabled": false }
+    ]
+}
