@@ -2,21 +2,21 @@
 
 A dark theme for VS Code with amber, yellow, teal and blue accents.
 
-![Unibronga One Dark: HTML](./screenshots/theme.png)
+![Unibronga One Dark: HTML](https://github.com/unibronga/DarkTheme/raw/HEAD/screenshots/theme.png)
 
 ## Screenshots
 
 ### Vue
 
-![Unibronga One Dark: Vue](./screenshots/vue.png)
+![Unibronga One Dark: Vue](https://github.com/unibronga/DarkTheme/raw/HEAD/screenshots/vue.png)
 
 ### Python
 
-![Unibronga One Dark: Python](./screenshots/python.png)
+![Unibronga One Dark: Python](https://github.com/unibronga/DarkTheme/raw/HEAD/screenshots/python.png)
 
 ### CSS and SCSS
 
-![Unibronga One Dark: CSS and SCSS](./screenshots/css.png)
+![Unibronga One Dark: CSS and SCSS](https://github.com/unibronga/DarkTheme/raw/HEAD/screenshots/css.png)
 
 ## Languages
 
