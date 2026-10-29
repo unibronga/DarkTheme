@@ -2,6 +2,10 @@
 
 All notable changes to the "Unibronga One Dark" theme are documented in this file.
 
+## [1.0.3]
+
+- More screenshots in the README: Vue, Python, CSS and SCSS.
+
 ## [1.0.2]
 
 - New screenshot and updated recommended settings in the README.
